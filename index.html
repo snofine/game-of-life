@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра Жизнь</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #333;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 4px;
+            min-width: 120px;
+        }
+        button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="clear">Очистить</button>
+        <button id="pause">Пауза</button>
+        <button id="mode">Режим: Рисование</button>
+        <button id="step">Шаг</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="population" style="margin-top: 10px; font-size: 18px;">Живых клеток: 0</div>
+    <script src="game.js"></script>
+</body>
+</html> 
