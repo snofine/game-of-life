@@ -40,3 +40,6 @@
 - CSS3
 - JavaScript (ES6+)
 - Canvas API 
+
+## Лицензия
+MIT License
